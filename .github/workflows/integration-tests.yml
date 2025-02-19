@@ -25,7 +25,7 @@ jobs:
            run: |
               echo $PR_BASE_REF
               if [[ $PR_BASE_REF != releases/* ]]; then
-                npm install
+                npm ci
                 npm run build
               fi
 
@@ -35,7 +35,7 @@ jobs:
               python-version: '3.x'
 
          - name: Install requests library
-           run: pip install requests
+           run: pip install requests==2.31.0 flask==2.2.5
 
          - name: Setup kubectl latest
            uses: ./

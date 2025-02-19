@@ -17,5 +17,5 @@ jobs:
 
          - name: Build and run L0 tests.
            run: |
-              npm install
+              npm ci
               npm test
