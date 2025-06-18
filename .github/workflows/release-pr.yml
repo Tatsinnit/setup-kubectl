@@ -13,6 +13,6 @@ jobs:
       permissions:
          actions: read
          contents: write
-      uses: davidgamero/action-release-workflows/.github/workflows/release_js_project.yaml@v1
+      uses: davidgamero/action-release-workflows/.github/workflows/release_js_project.yaml@david
       with:
          changelogPath: ./CHANGELOG.md
