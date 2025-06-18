@@ -4,7 +4,7 @@ on: # rebuild any PRs and main branch changes
 
 jobs:
    run-integration-test:
-      name: Validate release and master branch
+      name: Validate forked latest release
       runs-on: ubuntu-latest
       env:
          KUBECONFIG: /home/runner/.kube/config
