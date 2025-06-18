@@ -1,4 +1,4 @@
-name: Integration test for setup-kubectl
+name: Forked Integration test for setup-kubectl
 on: # rebuild any PRs and main branch changes
    workflow_dispatch:
 
@@ -31,7 +31,7 @@ jobs:
            run: pip install requests
 
          - name: Setup kubectl latest
-           uses: davidgamero/setup-kubectl@latest
+           uses: davidgamero/setup-kubectl
            with:
               version: 'latest'
 
