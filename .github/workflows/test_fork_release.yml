@@ -31,7 +31,7 @@ jobs:
            run: pip install requests
 
          - name: Setup kubectl latest
-           uses: davidgamero/setup-kubectl
+           uses: davidgamero/setup-kubectl@v9.99.99
            with:
               version: 'latest'
 
